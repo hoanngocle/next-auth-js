@@ -13,6 +13,8 @@ export default function ClientPage() {
         }
     });
 
+    if (!session?.user) return;
+
     return (
         <section className='flex flex-col gap-6'>
             <UserCard user={session?.user} pagetype={'Client'} />
