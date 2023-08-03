@@ -24,7 +24,7 @@ export const options: NextAuthOptions = {
             },
             async authorize(credentials) {
                 const user = {
-                    id: '42',
+                    id: '12',
                     name: 'Nick',
                     password: 'nextauth'
                 };
